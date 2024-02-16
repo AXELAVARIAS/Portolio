@@ -1,0 +1,78 @@
+body {
+    /*main background*/
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    background-image: url('trees.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .profile {
+    /*background of profile */
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    background-position: center;
+    font-family: "Sofia", sans-serif;
+    width: 900px; /* Set a fixed width for the profile section */
+    margin: 50px auto; /* Center the profile section horizontally */
+    border: 0px solid #ccc; /* Border lines of the edges of profile */
+    border-radius: 36px; /* For the corner of the profile */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Size of the border of profile */
+  }
+  
+  .profile img {
+    max-width: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px; /* Distance between the image and buttons */
+  }
+  
+  .profile-details {
+    display: flex;
+    align-items: center; /* To center the text */
+  }
+  
+  .introduction {
+    margin-left: 30px; /* For pic and name adjustments */
+  }
+  
+  .introduction h1 {
+    font-size: 70px;
+    margin: 0;
+    color: white;
+  }
+  
+  .introduction p {
+    margin-top: 5px;
+    color: white;
+    transition: color 0.3s;
+    font-size: 40px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Button color when pressed or pointed */
+  }
+  
+  .button {
+    display: inline-block; /* Distance between button and im */
+    margin: 0 10px; /* Distance of each button */
+    padding: 15px 30px; /* Size of the button */
+    font-size: 20px; /* Size of the font in button */
+    text-decoration: none; /* Text decoration */
+    background-color: #007bff; /* Button color */
+    color: white;
+    border-radius: 12px; /* Corner of button */
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .profile-details, .buttons {
+    animation: fadeIn 2s ease-out;
+  }
+
+  
